@@ -1,13 +1,16 @@
 <?php
-
 require_once 'Base.php';
 class PreBase implements Base{
     public $a, $b, $res;
+    public function __construct ($a,$b){
+        $this -> a = $a;
+        $this -> b = $b;
+    }
     public function sum($a, $b)
     {
-        $this->res=$this->a + $this->b;
+        $this->res=$a+$b;
     }
-    public function out($res)
+    public function out()
     {
         return $this->res;
     }

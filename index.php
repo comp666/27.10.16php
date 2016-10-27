@@ -1,7 +1,7 @@
 <?php
 
 require_once 'PreBase.php';
-$sum=new PreBase($a,$b);
-$sum->sum(3,3);
-echo $sum->out($res);
+$sum=new PreBase(5,4);
+$sum->sum(5,4);
+echo $sum->out();
 ?>
